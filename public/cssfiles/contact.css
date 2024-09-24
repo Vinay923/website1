@@ -89,3 +89,13 @@ textarea{
         order: 0;
     }
 }
+@media (max-width: 568px){
+    .new_feedback{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .new_feedback button{
+        align-self: start;
+    }
+}
