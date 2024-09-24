@@ -1,0 +1,27 @@
+.section1{
+    display: grid;
+    padding: 40px;
+    gap:30px;
+}
+
+.section1__content--text{
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
+
+.section1__images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+.section1__btn{
+    justify-self: center;
+}
+
+@media (max-width: 568px){
+    .section1__images{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

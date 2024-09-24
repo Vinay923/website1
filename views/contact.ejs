@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs') %>
+<link rel="stylesheet" href="/cssfiles/contact.css">
+
+<body>
+    <div class="hero">
+        <%- include('./partials/nav.ejs') %>
+
+    </div>
+
+    <div class="section1  container text-center">
+        <div class="section1__title common__title ">contact us</div>
+        <div class="section1__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, odio.</div>
+    </div>
+
+    <div class="section2 container grid">
+        <div class="section2__left">
+            <form action="/contact" class="form" method="POST">
+                <label for="name"> Name</label>
+                <input type="text" placeholder="Enter your name" id="name" name="name">
+                <label for="email"> Email</label>
+                <input type="text" placeholder="Enter your email" id="email" name="email">
+                <label for="message">Message</label>
+                <textarea name="feedback" id="message" placeholder="Your message here" cols="30" rows="6"></textarea>
+                <button class="dark-btn" type="submit">Submit</button>
+            </form>
+        </div>
+        <img src="/images/Contact/map.svg" alt="" class="section2__right responsive_image">
+    </div>
+
+
+    <div class="section3 container ">
+        <% if(messages.length>0) {%>
+            <% messages.forEach(message => {%>
+                <div class="new_feedback">
+                    <div class="section3__content">
+                        <div class="section3__name">Name: <%= message.name%></div>
+                        <div class="section3__email">Email: <%= message.email%></div>
+                        <div class="section3__feedback">Feedback: <%= message.feedback%></div>
+                    </div>
+                    <button  data-doc="<%=message._id%>" class="section3__delete white-btn" >Delete</button>
+                </div>
+            <% }) %>
+        <% } else {%>
+            <div class="section1__title common__title">Nothing to Display Here</div>
+        <% } %>
+    </div>
+
+    
+    
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+
+<script src="/main.js"></script>
+</html>

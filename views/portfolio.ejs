@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs') %>
+<link rel="stylesheet" href="/cssfiles/portfolio.css">
+
+<body>
+    <div class="hero">
+
+        <%- include('./partials/nav.ejs') %>
+
+    </div>
+
+    <div class="section1 container">
+        <div class="section1__content text-center flex">
+            <div class="section1__content--label label text-green">portfolio</div>
+            <div class="section1__content--title common__title">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="section1__content--text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, molestias.</div>
+        </div>
+        <div class="section1__images">
+            <img src="/images/Portfolio/sample-1.svg" alt="" class="responsive_image">
+            <img src="/images/Portfolio/sample-2.svg" alt="" class="responsive_image">
+            <img src="/images/Portfolio/sample-3.svg" alt="" class="responsive_image">
+            <img src="/images/Portfolio/sample-4.svg" alt="" class="responsive_image">
+            <img src="/images/Portfolio/sample-5.svg" alt="" class="responsive_image">
+            <img src="/images/Portfolio/sample-6.svg" alt="" class="responsive_image">
+            <img src="/images/Portfolio/sample-7.svg" alt="" class="responsive_image">
+            <img src="/images/Portfolio/sample-8.png" alt="" class="responsive_image">
+        </div>
+        <button class="section1__btn dark-btn">Learn More</button>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+
+<script src="/main.js"></script>
+</html>

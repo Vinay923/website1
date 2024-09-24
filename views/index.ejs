@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/header.ejs') %>
+<link rel="stylesheet" href="/cssfiles/index.css">
+<body>
+    <div class="hero">
+        <%- include('./partials/nav.ejs') %>
+        <div class="section1 grid container">
+            <div class="section1__left flex">
+                <div class="section__left--label label text-white">welcome</div>
+                <div class="section__left--title text-white common__title">Lorem ipsum dolor sit amet.</div>
+                <div class="section__left--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                    aliquam esse totam, nihil aut eligendi beatae voluptatum eos? Repudiandae, optio. Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit. Modi, laborum.</div>
+                <button class="section__left--btn white-btn">Explore</button>
+            </div>
+            <img src="/images/Home/image-1.svg" alt="" class="section1__right responsive_image">
+        </div>
+    </div>
+
+    <div class="section2 container">
+        <div class="section2__content text-center flex">
+            <div class="section2__content--label label text-green">partners</div>
+            <div class="section2__content--title common__title">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="section2__content--text ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, nam!
+            </div>
+        </div>
+        <div class="section2__logo">
+            <img src="/images/Companies/Airbnb.svg" alt="" class="responsive_image">
+            <img src="/images/Companies/Facebook.svg" alt="" class="responsive_image">
+            <img src="/images/Companies/Google.svg" alt="" class="responsive_image">
+            <img src="/images/Companies/Microsoft.svg" alt="" class="responsive_image">
+            <img src="/images/Companies/Spotify.svg" alt="" class="responsive_image">
+        </div>
+        <button class="section2__btn dark-btn">Learn More</button>
+    </div> 
+
+    <div class="section3 grid container">
+        <img src="/images/Home/image-2.svg" alt="" class="responsive_image">
+        <div class="section3__right flex">
+            <div class="section3__right--title common__title">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="section3__right--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laboriosam aliquam est exercitationem quo reiciendis asperiores veritatis placeat porro earum? Libero tempora impedit rerum quae aspernatur nostrum quod fuga quasi.</div>
+            <button class="section3__right--btn dark-btn">Explore</button>
+        </div>
+    </div>
+
+    <div class="section4 grid container">
+        <div class="section4__left flex">
+            <div class="section4__left--title common__title">Lorem ipsum dolor sit amet.</div>
+            <div class="section4__left--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error vero optio adipisci non, blanditiis doloribus iste facilis, alias temporibus illo vel obcaecati dolore voluptatem nemo pariatur eius impedit quia vitae?</div>
+            <button class="section4__left--btn dark-btn">Explore</button>
+        </div>
+        <img src="/images/Home/image-3.svg" alt="" class=" section4__right responsive_image">
+    </div>
+
+    <div class="section5 container">
+        <div class="section5__content text-center">
+            <div class="section5__content--label label text-green">teams</div>
+            <div class="section5__content--title common__title">our team</div>
+            <div class="section5__content--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nobis?</div>
+
+        </div>
+        <div class="section5__cards">
+            <div class="section5__cards--1">
+                <img src="/images/team/Peg_Legge.svg" alt="" class="responsive_image">
+                <div class="name">Peg Legge</div>
+                <div class="position">CEO</div>
+            </div>
+            <div class="section5__cards--2">
+                <img src="/images/team/Richard.svg" alt="" class="responsive_image">
+                <div class="name">Richard Guerra</div>
+                <div class="position">CTO</div>
+            </div>
+            <div class="section5__cards--3">
+                <img src="/images/team/Alexandra.svg" alt="" class="responsive_image">
+                <div class="name">Alexandra Stolz</div>
+                <div class="position">DESIGNER</div>
+            </div>
+            <div class="section5__cards--4">
+                <img src="/images/team/Janet.svg" alt="" class="responsive_image">
+                <div class="name">Janet Bray</div>
+                <div class="position">DEVELOPER</div>
+            </div>
+        </div>
+        <button class="section5__btn dark-btn">View Teams</button>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+<script src="/main.js"></script>
+
+</html>
