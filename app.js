@@ -4,7 +4,7 @@ const Message = require('./models/message')
 
 
 
-const dbURI = 'mongodb+srv://abhinay923:Sangam923@website1.q6bbi.mongodb.net/website1?retryWrites=true&w=majority&appName=website1';
+const dbURI = 'mongodb+srv://vinay:vinay@website1.q6bbi.mongodb.net/website1?retryWrites=true&w=majority&appName=website1';
 mongoose.connect(dbURI)
     .then((result)=>app.listen(3000))
     .catch((err)=> console.log(err));
